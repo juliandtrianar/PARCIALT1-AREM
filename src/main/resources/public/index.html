@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key-Value Store</title>
+</head>
+<body>
+    <h1>Key-Value Store</h1>
+    <label>Key: <input type="text" id="key"></label><br>
+    <label>Value: <input type="text" id="value"></label><br>
+    <button onclick="setKV()">Set</button>
+    <button onclick="getKV()">Get</button>
+    <pre id="response"></pre>
+
+    <script>
+        async function setKV() {
+            const key = document.getElementById("key").value;
+            const value = document.getElementById("value").value;
+            const res = await fetch(`/setkv?key=${encodeURIComponent(key)}&value=${encodeURIComponent(value)}`);
+            document.getElementById("response").textContent = await res.text();
+        }
+
+        async function getKV() {
+            const key = document.getElementById("key").value;
+            const res = await fetch(`/getkv?key=${encodeURIComponent(key)}`);
+            document.getElementById("response").textContent = await res.text();
+        }
+    </script>
+</body>
+</html>
