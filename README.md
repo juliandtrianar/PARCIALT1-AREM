@@ -19,18 +19,27 @@
 4. corremos los servicios
 
    ´´´
-  java -cp target/classes edi.eci.arep.BackendService
+  java -cp target/classes edu.eci.arep.BackendService
    ´´´
-   java -cp target/classes edi.eci.arep.FacadeService
+   java -cp target/classes edu.eci.arep.FacadeService
 6. Una vez el servidor diga Listo para recibir...
 7. probamos su funcionamiento con
    ´´´
-   getkv?key={key}
+   http://localhost:8080/setkv?key=usuario&value=Julian
+   <img width="639" height="252" alt="image" src="https://github.com/user-attachments/assets/855f8f74-3f00-4482-85ab-be1b58e7d0cc" />
+
+ 
    ´´´
    ´´´
-   setkv?key={key}&value={value}
+   http://localhost:8080/getkv?key=usuario
+   
+  <img width="776" height="175" alt="image" src="https://github.com/user-attachments/assets/1f2f012e-b7d5-4621-80ce-710795f50eab" />
+
    ´´´
-   getkv?key={key}
+
+http://localhost:8080/getkv?key=desconocido
+   <img width="553" height="183" alt="image" src="https://github.com/user-attachments/assets/a9fb564c-fb90-41c9-a1bd-d0913863fbb5" />
+
    ´´´
    
 
