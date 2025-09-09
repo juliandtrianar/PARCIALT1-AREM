@@ -22,22 +22,23 @@
   java -cp target/classes edu.eci.arep.BackendService
    ```
 
- ```
+    ```
    java -cp target/classes edu.eci.arep.FacadeService
- ```
+    ```
 6. Una vez el servidor diga Listo para recibir...
 
 7. probamos su funcionamiento con
-  ```
+
+    ```
    http://localhost:8080/setkv?key=usuario&value=Julian
     ```
    <img width="639" height="252" alt="image" src="https://github.com/user-attachments/assets/855f8f74-3f00-4482-85ab-be1b58e7d0cc" />
 
  
    
- ```
+   ```
    http://localhost:8080/getkv?key=usuario
-  ```
+    ```
   <img width="776" height="175" alt="image" src="https://github.com/user-attachments/assets/1f2f012e-b7d5-4621-80ce-710795f50eab" />
 
     ```
