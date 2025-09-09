@@ -1,5 +1,0 @@
-{ "key": "mi_llave", "value": "mi_valor" }
-
-{ "error": "key_not_found", "key": "mi_llave" }}
-
-{ "key": "mi_llave", "value": "mi_valor", "status": "created" }
