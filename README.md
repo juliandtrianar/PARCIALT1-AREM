@@ -16,12 +16,12 @@
    ´´´
    mvn compile
    ´´´
-4. corra el servicion fachada con
+4. corremos los servicios
 
    ´´´
-   java -cp target/classes edi.eci.arep.FacadeService
-   
+  java -cp target/classes edi.eci.arep.BackendService
    ´´´
+   java -cp target/classes edi.eci.arep.FacadeService
 6. Una vez el servidor diga Listo para recibir...
 7. probamos su funcionamiento con
    ´´´
